@@ -1,0 +1,11 @@
+    <section>
+      <h2>Filter</h2>
+      <ul>
+        <li><a href="/">All</a></li>
+        <% squads.forEach(squad => { %>
+          <li><a href="/<%= squad.id %>">Squad <%= squad.name %></a></li>
+        <% }) %>
+      </ul>
+    </section>
+  </body>
+</html>
